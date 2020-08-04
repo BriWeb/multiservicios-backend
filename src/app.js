@@ -1,13 +1,13 @@
-// if(process.env.NODE_ENV === "development"){
-//     require('dotenv').config();         //npm i dotenv
-// }
+if(process.env.NODE_ENV === "development"){
+    require('dotenv').config();         //npm i dotenv
+}
 //                                         //npm i nodemon -D
 const express = require('express'); //npm i express
 const cors = require('cors');        //npm i cors
 const morgan = require('morgan');   //npm i morgan
 const path = require('path');
 const multer = require('multer');   //npm i multer
-// const fs = require('fs'); //Este creo que no es compatible con async-await
+// const fs = require('fs'); 
 
 // const React = require('react');
 // const ReactDOMServer = require('react-dom/server');
@@ -40,7 +40,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
-// app.use('^/$', async (req, res, next) => {
+// app.use('^/$', async (req, res, next) => {          //PARA SERVER SIDE RENDERING
 //     try {
 //         console.log('hola')
 //         const data = await fs.readFile(path.resolve('./public/index.html'), 'utf-8');
